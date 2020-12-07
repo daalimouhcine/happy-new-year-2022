@@ -1,0 +1,479 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:0;
+}
+
+/*----- body -----*/
+body {
+    height:100%;
+    background:url(images/background-2.gif);
+    overflow-x:hidden;
+    font-family:sans-serif;
+    z-index:12;
+}
+/*----- body -----*/
+
+
+
+/*----- left & right sides -----*/
+#left-side {
+    width:40px;
+    height:100%;
+    position:fixed;
+    left:0%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+#left-side div {
+    width:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    animation:left 10s linear infinite;
+}
+#left-side div img {
+    width:20px;
+    margin:5px 0;
+}
+@keyframes left {
+    0% {top:-100%;}
+    100% {top:100%}
+}
+
+
+#right-side {
+    width:40px;
+    height:100%;
+    position:fixed;
+    right:0%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index:10;
+}
+#right-side div {
+    width:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    position:absolute;
+    animation:right 10s linear infinite;
+}
+#right-side div img {
+    width:20px;
+    margin:5px 0;
+}
+@keyframes right {
+    0% {bottom:-100%}
+    100% {bottom:100%}
+}
+
+/*----- left & right sides -----*/
+
+
+
+/*----- ballons 2021 -----*/
+#ballon {
+    position:fixed;
+    height:100%;
+    width:100%;
+    z-index: 50;
+    pointer-events:none;
+}
+#ballon img {
+    width:120px;
+    position:absolute;
+}
+#ba1 {
+    bottom:-20%;
+    left:0%;
+    animation:ba1 8s linear infinite 7s;
+}
+#ba2 {
+    bottom:-20%;
+    left:10%;
+    animation:ba2 8s linear infinite 5s;
+}
+#ba3 {
+    bottom:-20%;
+    left:20%;
+    animation:ba3 8s linear infinite;
+}
+#ba4 {
+    bottom:-20%;
+    left:30%;
+    animation:ba4 8s linear infinite 3s;
+}
+#ba5 {
+    bottom:-20%;
+    left:40%;
+    animation:ba5 8s linear infinite 2s;
+}
+#ba6 {
+    bottom:-20%;
+    left:50%;
+    animation:ba6 8s linear infinite 3s;
+}
+#ba7 {
+    bottom:-20%;
+    left:60%;
+    animation:ba7 8s linear infinite 5s;
+}
+#ba8 {
+    bottom:-20%;
+    left:70%;
+    animation:ba8 8s linear infinite 2s;
+}
+#ba9 {
+    bottom:-20%;
+    left:80%;
+    animation:ba9 8s linear infinite 3s;
+}
+#ba10 {
+    bottom:-20%;
+    left:90%;
+    animation:ba10 8s linear infinite;
+}
+@keyframes ba1 {
+    0% {bottom:-20% ; left:0% ;}
+    25% {bottom:20% ; left:5% ;}
+    50% {bottom:45% ; left:10% ;}
+    75% {bottom:71% ; left:11% ;}
+    100% {bottom:100% ; left:12% ;}
+}
+@keyframes ba2 {
+    0% {bottom:-20% ; left:10% ;}
+    25% {bottom:20% ; left:12% ;}
+    50% {bottom:45% ; left:15% ;}
+    75% {bottom:71% ; left:10% ;}
+    100% {bottom:100% ; left:5% ;}
+}
+@keyframes ba3 {
+    0% {bottom:-20% ; left:20% ;}
+    25% {bottom:20% ; left:15% ;}
+    50% {bottom:45% ; left:10% ;}
+    75% {bottom:71% ; left:7% ;}
+    100% {bottom:100% ; left:5% ;}
+}
+@keyframes ba4 {
+    0% {bottom:-20% ; left:30% ;}
+    25% {bottom:20% ; left:32% ;}
+    50% {bottom:45% ; left:35% ;}
+    75% {bottom:71% ; left:32% ;}
+    100% {bottom:100% ; left:30% ;}
+}
+@keyframes ba5 {
+    0% {bottom:-20% ; left:40% ;}
+    25% {bottom:20% ; left:37% ;}
+    50% {bottom:45% ; left:35% ;}
+    75% {bottom:71% ; left:30% ;}
+    100% {bottom:100% ; left:27% ;}
+}
+@keyframes ba6 {
+    0% {bottom:-20% ; left:50% ;}
+    25% {bottom:20% ; left:55% ;}
+    50% {bottom:45% ; left:57% ;}
+    75% {bottom:71% ; left:58% ;}
+    100% {bottom:100% ; left:55% ;}
+}
+@keyframes ba7 {
+    0% {bottom:-20% ; left:60% ;}
+    25% {bottom:20% ; left:58% ;}
+    50% {bottom:45% ; left:55% ;}
+    75% {bottom:71% ; left:53% ;}
+    100% {bottom:100% ; left:54% ;}
+}
+@keyframes ba8 {
+    0% {bottom:-20% ; left:70% ;}
+    25% {bottom:20% ; left:73% ;}
+    50% {bottom:45% ; left:75% ;}
+    75% {bottom:71% ; left:75% ;}
+    100% {bottom:100% ; left:74% ;}
+}
+@keyframes ba9 {
+    0% {bottom:-20% ; left:80% ;}
+    25% {bottom:20% ; left:79% ;}
+    50% {bottom:45% ; left:78% ;}
+    75% {bottom:71% ; left:77% ;}
+    100% {bottom:100% ; left:78% ;}
+}
+@keyframes ba10 {
+    0% {bottom:-20% ; left:90% ;}
+    25% {bottom:20% ; left:87% ;}
+    50% {bottom:45% ; left:86% ;}
+    75% {bottom:71% ; left:85% ;}
+    100% {bottom:100% ; left:89% ;}
+}
+/*----- ballons 2021 -----*/
+
+
+
+/*----- content -----*/
+#container {
+    background:rgba(12, 12, 12, 0.74) url(images/background.gif) center fixed;
+    width:500px;
+    margin:0 auto;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    position:relative;
+    border-radius:5px;
+    padding-bottom:10rem;
+}
+
+/*----- name -----*/
+#name-img {
+    width:500px;
+
+}
+#header {
+    animation:wobble 5s ease-in-out infinite;
+    transform-origin:center center;
+    transform-style:preserve-3d;
+    font-size: 4px;
+    margin: -4em 0;
+    margin-bottom: 40px;
+}
+@keyframes wobble {
+    0%,100%{ transform:rotate3d(1,1,0,20deg); }
+    25%{ transform:rotate3d(-1,1,0,20deg); }
+    50%{ transform:rotate3d(-1,-1,0,20deg); }
+    75%{ transform:rotate3d(1,-1,0,20deg); }
+}
+#header-name {
+    font-size:3.5rem;
+    color:wheat;
+    margin:1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:linear-gradient(to right, rgb(255, 100, 100) 20%,rgb(255, 211, 66) 40%,rgb(241, 255, 45) 60%, #fc38a4 80%);
+    background-size:200% auto;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: shine 1s linear infinite;
+    transition: all linear 0.2s;
+    transform-style: preserve-3d;
+    animation: shine 2s infinite alternate ease-in-out -7.5s;
+    transform: rotateY(10deg) rotateX(23deg) translateZ(0);
+    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.18);
+}
+@-webkit-keyframes shine {
+    to {
+    transform: translateY(0);
+    background-position: 200% center;
+    }
+}
+@keyframes shine {
+    to {
+    transform: translateY(0.2em);
+    background-position: 200% center;
+    }
+}
+@-webkit-keyframes nam {
+    to {
+    transform: translateY(0.3em);
+    background-position: 200% center;
+    }
+}
+@keyframes nam {
+    to {
+    transform: translateY(0.3em);
+    background-position: 200% center;
+    }
+}
+
+
+#french {
+    width:200px;
+}
+
+/*----- top images -----*/
+#image1, #image2 {
+    width:200px;
+    height: 200px;
+}
+
+/*----- animation of top images -----*/
+#anim-img1 {
+    width:100%;
+    height:200px;
+    position:relative;
+    margin:1rem;
+}
+#image1 {
+    transform: rotateX(10deg);
+    position:absolute;
+    left:30%;
+    animation: img1 4s linear infinite ;
+}
+#image2 {
+    animation:img2 5s linear infinite;
+    margin-bottom:1.5rem;
+    width:250px;
+    height: 250px;
+    border-radius:20px;
+    background-color:rgb(255, 238, 85);
+    padding:0.2rem;
+}
+
+@keyframes img1 {
+    0% {transform: rotate(0deg); left:30%;}
+    12.5% {transform: rotate(12deg); left:26%;}
+    25% {transform: rotate(24deg); left:23%;}
+    37.5% {transform: rotate(12deg); left:26%;}
+    50% {transform: rotate(0deg); left:30%;}
+    62.5% {transform: rotate(-12deg); left:34%;}
+    75% {transform: rotate(-24deg); left:37%;}
+    87.5% {transform: rotate(-12deg); left:34%;}
+    100% {transform: rotate(0deg); left:30%;}
+}
+@keyframes img2 {
+    0% {transform:scale(0);}
+    12.5% {transform:scale(0.7);}
+    25% {transform:scale(1);}
+    37.5% {transform:scale(0.75);}
+    50% {transform:scale(1);}
+    62.5% {transform:scale(0.75);}
+    75% {transform:scale(1);}
+    87.5% {transform:scale(0.7);}
+    100% {transform:scale(0);}
+}
+
+/*----- bottom images -----*/
+#happy2021 {
+    width:400px;
+    margin:3rem;
+    border-radius:1000px;
+    animation:happy 2s linear infinite ;
+}
+
+/*----- paragraphs -----*/
+#souhaite1 {
+    font-size:1.5rem;
+    color:yellow;
+    margin:8px 50px;
+    font-family:Caveat;
+}
+#souhaite2 {
+    font-size:1.5rem;
+    color:rgb(0, 255, 170);
+    margin:8px 80px;
+    font-family:Caveat;
+}
+#souhaite3 {
+    font-size:1.5rem;
+    color:rgb(255, 0, 221);
+    margin:8px 60px;
+    font-family:Caveat;
+}
+
+/*----- animating the bottom paragraphs -----*/
+#anim-pa {
+    width:100%;
+    height:50px;
+    width:100%; 
+    position:relative;
+    overflow:hidden;
+    margin-bottom:5rem;
+}
+#anim-pa p {
+    font-size:1.6rem;
+    animation:anim-pa 15s linear infinite;
+    position:absolute;
+    top:15%;
+    width:100%;
+    color:yellow;
+}
+#anim-pa p span {
+    font-weight:700;
+    font-size:1.8rem;
+}
+
+@keyframes anim-pa {
+    0% {left:100%}
+    100% {left:-100%}
+}
+
+/*----- last paragraph -----*/
+#part {
+    margin:3rem;
+    font-size:1.5rem;
+    font-weight:700;
+    position:absolute;
+    bottom:5%;
+    animation:part 2s linear infinite;
+    z-index:1;
+    text-shadow: 1px 2px 3px #ff002b, 1px 2px 3px #ff0037, -1px -1px 3px #ff0037, -1px -1px 3px #ff0037;
+    color: #ffc507;
+}
+
+@keyframes part {
+    0% {bottom:5%;}
+    20% {bottom:5.5%;}
+    30% {bottom:5%;}
+    40% {bottom:5.5%;}
+    50% {bottom:6%;}
+    60% {bottom:5.5%;}
+    70% {bottom:6%;}
+    80% {bottom:5%;}
+    90% {bottom:5%;}
+    100% {bottom:5%;}
+}
+
+
+
+#last-img {
+    width:450px;
+    animation:part 2s linear infinite;
+    position:absolute;
+    opacity:0.9;
+    z-index:0;
+}
+/*----- content -----*/
+
+
+
+/*----- input form -----*/
+form {
+    position:fixed;
+    bottom:0%;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: space-between;
+    z-index:60;
+}
+form input {
+    width:850px;
+    height:30px;
+    background-color:rgb(206, 27, 27);
+    border:1px solid rgb(204, 38, 38);
+    border-radius:10px;
+    padding:0.3rem;
+    margin:0 1.7rem 0 0;
+    font-size:1.3rem;
+    color:white;
+    outline:none;
+    text-align: center;
+}
+::-ms-input-placeholder {
+    color:white;    
+}
+::-webkit-input-placeholder {
+    color:white;
+}
+form button {
+    width:350px;
+    height:42px;
+    background-color: rgb(207, 28, 28);
+    border:1px solid rgb(204, 38, 38);
+    border-radius:10px;
+    outline:none;
+    font-size:1.3rem;
+    color:white;
+    cursor:pointer;
+}
