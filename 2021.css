@@ -7,10 +7,10 @@
 /*----- body -----*/
 body {
     height:100%;
-    background:url(images/background-2.gif);
+    background:rgb(190, 39, 39);
     overflow-x:hidden;
     font-family:sans-serif;
-    z-index:12;
+    z-index:1000002;
     text-align:center;
     overflow: hidden;
 }
@@ -28,7 +28,7 @@ body {
     flex-direction:row;
 }
 .open #door {
-    animation:doorOpen 7s linear forwards;
+    animation:doorOpen 3s linear forwards;
 }
 @keyframes doorOpen {
     0% {top:0%}
@@ -643,9 +643,9 @@ body {
 #header-name {
     font-size:3.5rem;
     color:wheat;
-    margin:1.5rem;
+    margin:1rem 1rem 0rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background:linear-gradient(to right, rgb(255, 100, 100) 20%,rgb(255, 211, 66) 40%,rgb(241, 255, 45) 60%, #fc38a4 80%);
+    background:linear-gradient(to right, rgb(255, 100, 100) 20%,rgb(255, 211, 66) 40%,rgb(241, 255, 45) 60%, #fc38a4 80%) ;
     background-size:200% auto;
     background-clip: text;
     text-emphasis-color: transparent;
@@ -685,7 +685,7 @@ body {
 
 
 #french {
-    width:200px;
+    width:300px;
 }
 
 /*----- top images -----*/
@@ -886,9 +886,9 @@ form button {
     font-family:'Comfortaa', cursive;
     text-decoration:none;
     color:white;
-    display:none;
 }
 #submit-whatsapp img {
     width:25px;
     margin-right:1rem;
 }
+
