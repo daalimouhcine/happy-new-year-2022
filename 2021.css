@@ -36,7 +36,7 @@ body {
     100% {top:-100%}
 }
 #left-door {
-    width:50.2%;
+    width:50.3%;
     height:110%;
     transform:scaleX(-1);
 }
@@ -48,7 +48,7 @@ body {
     100% {transform:rotateY(90deg) translateZ(-500px);display:none}
 }
 #right-door {
-    width:50.2%;
+    width:50.3%;
     height:110%;
 }
 .open #right-door {
@@ -102,8 +102,10 @@ body {
     top:20%;
     right:-20%;
     width:200px;
-    animation:clown 18s linear;
     z-index:10000;
+}
+.open #clown {
+    animation:clown 18s linear;
 }
 @keyframes clown {
     0% {right:-20%}
@@ -205,13 +207,13 @@ body {
     opacity:0.6;
 }
 .open #blue1 {
-    animation:blue1 14s linear 17s;
+    animation:blue1 14s linear infinite 17s;
 }
 .open #blue2 {
-    animation:blue2 10s linear 25s;
+    animation:blue2 10s linear infinite 25s;
 }
 .open #blue3 {
-    animation:blue3 25s linear 10s;
+    animation:blue3 25s linear infinite 10s;
 }
 @keyframes blue1 {
     0% {top:-20%;left:60%;transform:rotate(0deg)}
@@ -232,26 +234,34 @@ body {
 #snow1 {
     top:-20%;
     width:50px;
-    animation:snow1 11s linear infinite 10s;
     opacity:0.6;
 }
 #snow2 {
     top:-20%;
     width:70px;
-    animation:snow2 10s linear infinite 15s;
     opacity:0.6;
 }
 #snow3 {
     top:-20%;
     width:30px;
-    animation:snow3 20s linear infinite ;
     opacity:0.7;
 }
 #snow4 {
     top:-20%;
     width:110px;
-    animation:snow3 15s linear infinite 5s;
     opacity:0.7;
+}
+.open #snow1 {
+    animation:snow1 11s linear infinite 10s;
+}
+.open #snow2 {
+    animation:snow2 10s linear infinite 15s;
+}
+.open #snow3 {
+    animation:snow3 20s linear infinite ;
+}
+.open #snow4 {
+    animation:snow3 15s linear infinite 5s;
 }
 
 @keyframes snow1 {
@@ -278,14 +288,18 @@ body {
 #no1 {
     top:-20%;
     width:40px;
-    animation:no1 15s linear infinite 15s;
     opacity:0.7;
 }
 #no2 {
     top:-20%;
     width:30px;
-    animation:no2 7s linear infinite 2s;
     opacity:0.5;
+}
+.open #no1 {
+    animation:no1 15s linear infinite 15s;
+}
+.open #no2 {
+    animation:no2 7s linear infinite 2s;
 }
 @keyframes no1 {
     0% {top:-20%;left:90%;transform:rotate(0deg)}
@@ -301,16 +315,22 @@ body {
 #light1 {
     top:-20%;
     width:70px;
-    animation:light1 10s linear infinite 7s;
 }
 #light2 {
     top:-20%;
     width:100px;
-    animation:light2 17s linear infinite ;
 }
 #light3 {
     top:-20%;
     width:60px;
+}
+.open #light1 {
+    animation:light1 10s linear infinite 7s;
+}
+.open #light2 {
+    animation:light2 17s linear infinite ;
+}
+.open #light3 {
     animation:light3 13s linear infinite 15s ;
 }
 @keyframes light1 {
@@ -333,18 +353,24 @@ body {
     top:-20%;
     width:70px;
     opacity:0.5;
-    animation:str1 10s linear infinite 20s;
 }
 #st2 {
     top:-20%;
     width:20px;
     opacity:0.7;
-    animation:str2 12s linear infinite 12s;
 }
 #st3 {
     top:-20%;
     width:120px;
     opacity:0.4;
+}
+.open #st1 {
+    animation:str1 10s linear infinite 20s;
+}
+.open #st2 {
+    animation:str2 12s linear infinite 12s;
+}
+.open #st3 {
     animation:str3 27s linear infinite 2s;
 }
 @keyframes str1 {
@@ -440,51 +466,71 @@ body {
 #ba1 {
     bottom:-20%;
     left:0%;
-    animation:ba1 8s linear  10s;
 }
 #ba2 {
     bottom:-20%;
     left:10%;
-    animation:ba2 8s linear  5s;
 }
 #ba3 {
     bottom:-20%;
     left:20%;
-    animation:ba3 8s linear ;
 }
 #ba4 {
     bottom:-20%;
     left:30%;
-    animation:ba4 8s linear  3s;
 }
 #ba5 {
     bottom:-20%;
     left:40%;
-    animation:ba5 8s linear  2s;
 }
 #ba6 {
     bottom:-20%;
     left:50%;
-    animation:ba6 8s linear  4s;
 }
 #ba7 {
     bottom:-20%;
     left:60%;
-    animation:ba7 8s linear  5s;
 }
 #ba8 {
     bottom:-20%;
     left:70%;
-    animation:ba8 8s linear  2s;
 }
 #ba9 {
     bottom:-20%;
     left:80%;
-    animation:ba9 8s linear  3s;
 }
 #ba10 {
     bottom:-20%;
     left:90%;
+}
+.open #ba1 {
+    animation:ba1 8s linear  10s;
+}
+.open #ba2 {
+    animation:ba2 8s linear  5s;
+}
+.open #ba3 {
+    animation:ba3 8s linear ;
+}
+.open #ba4 {
+    animation:ba4 8s linear  3s;
+}
+.open #ba5 {
+    animation:ba5 8s linear  2s;
+}
+.open #ba6 {
+    animation:ba6 8s linear  4s;
+}
+.open #ba7 {
+    animation:ba7 8s linear  5s;
+}
+.open #ba8 {
+    animation:ba8 8s linear  2s;
+}
+.open #ba9 {
+    animation:ba9 8s linear  3s;
+}
+.open #ba10 {
     animation:ba10 8s linear 7s;
 }
 @keyframes ba1 {
