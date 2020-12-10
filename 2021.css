@@ -3,6 +3,10 @@
     padding:0;
     box-sizing:0;
 }
+a{
+    text-decoration: none;
+}
+
 
 /*----- body -----*/
 body {
@@ -11,8 +15,8 @@ body {
     overflow-x:hidden;
     font-family:sans-serif;
     z-index:1000002;
-    text-align:center;
     overflow: hidden;
+    text-align:center;
 }
 /*----- body -----*/
 
@@ -104,7 +108,7 @@ body {
     z-index:10000;
 }
 .open #clown {
-    animation:clown 18s linear;
+    animation:clown 18s linear forwards;
 }
 @keyframes clown {
     0% {right:-20%}
@@ -617,7 +621,7 @@ body {
 
 
 /*----- content -----*/
-#container {
+.container {
     background:rgba(12, 12, 12, 0.74) url(images/background.gif) center fixed;
     width:500px;
     margin:0 auto;
@@ -666,6 +670,7 @@ body {
     animation: shine 2s infinite alternate ease-in-out -7.5s;
     transform: rotateY(10deg) rotateX(23deg) translateZ(0);
     text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.18);
+    text-transform:uppercase;
 }
 @-webkit-keyframes shine {
     to {
@@ -779,9 +784,7 @@ body {
 
 /*----- animating the bottom paragraphs -----*/
 #anim-pa {
-    width:100%;
     height:50px;
-    width:100%; 
     position:relative;
     overflow:hidden;
     margin-bottom:5rem;
@@ -792,7 +795,7 @@ body {
     animation:anim-pa 15s linear infinite;
     position:absolute;
     top:15%;
-    width:100%;
+    width:130%;
     color:yellow;
 }
 #anim-pa p span {
@@ -807,11 +810,13 @@ body {
 
 /*----- last paragraph -----*/
 #part {
-    margin:3rem;
+    width:100%;
+    height:80px;
     font-size:1.5rem;
     font-weight:700;
     position:absolute;
-    bottom:5%;
+    left:50%;
+    transform:translate(-50%);
     animation:part 2s linear infinite;
     z-index:1;
     text-shadow: 1px 2px 3px #ff002b, 1px 2px 3px #ff0037, -1px -1px 3px #ff0037, -1px -1px 3px #ff0037;
@@ -839,67 +844,11 @@ body {
     position:absolute;
     opacity:0.9;
     z-index:0;
+    transform:translate(-50%)
 }
 /*----- content -----*/
 
 
 
 /*----- input form -----*/
-form {
-    position:fixed;
-    bottom:0%;
-    display:flex;
-    flex-direction:row;
-    width:100%;
-    justify-content: space-between;
-    z-index:60;
-}
-form input {
-    width:850px;
-    height:30px;
-    background-color:rgb(206, 27, 27);
-    border:1px solid rgb(204, 38, 38);
-    border-radius:10px;
-    padding:0.3rem;
-    margin:0 1.7rem 0 0;
-    font-size:1.3rem;
-    color:white;
-    outline:none;
-    text-align: center;
-}
-::-ms-input-placeholder {
-    color:white;    
-}
-::-webkit-input-placeholder {
-    color:white;
-}
-form a {
-    width:350px;
-    height:35px;
-    background-color: rgb(207, 28, 28);
-    border:1px solid rgb(204, 38, 38);
-    border-radius:10px;
-    outline:none;
-    font-size:1.3rem;
-    color:white;
-    cursor:pointer;
-    text-decoration:none;
-    padding:0.3rem 0 0 ;
-}
-#submit-whatsapp {
-    width:100%;
-    background-color: rgb(207, 28, 28);
-    border:1px solid rgb(204, 38, 38);
-    border-radius:10px;
-    outline: none;
-    font-size:1.3rem;
-    padding:0.3rem;
-    font-family:'Comfortaa', cursive;
-    text-decoration:none;
-    color:white;
-}
-#submit-whatsapp img {
-    width:25px;
-    margin-right:1rem;
-}
 

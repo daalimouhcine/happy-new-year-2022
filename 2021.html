@@ -19,10 +19,15 @@
 
     <title>Happy new Year 2021</title>
     
+    <link type="text/css" rel="stylesheet" href="exampl-back.css" media="screen,projection">
+    
     <link rel="stylesheet" href="2021.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans+Caption&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap" rel="stylesheet">
+
+<script src="exampl-back-main.js"></script>	
+
 
 </head>
 <body>
@@ -32,7 +37,7 @@
         <div id="click">
             <p>click ici</p>
             <p>👇👇👇👇👇</p>
-            <div>
+            <div class="matki">
                 <img src="images/kado.png" alt="">
             </div>
         </div>
@@ -108,20 +113,20 @@
     <div id="ballon">
         <img src="images/2021ba.png" alt="" id="ba1">
         <img src="images/2021ba.png" alt="" id="ba2">
-        <img src="images/2021ba.png" alt="" id="ba3">
+        <img src="images/smiley-face-new-year-party.gif " alt="" id="ba3">
         <img src="images/2021ba.png" alt="" id="ba4">
         <img src="images/2021ba.png" alt="" id="ba5">
         <img src="images/2021ba.png" alt="" id="ba6">
-        <img src="images/2021ba.png" alt="" id="ba7">
+        <img src="images/smiley-face-new-year-party.gif" alt="" id="ba7">
         <img src="images/2021ba.png" alt="" id="ba8">
         <img src="images/2021ba.png" alt="" id="ba9">
         <img src="images/2021ba.png" alt="" id="ba10">
     </div>
     <div id="sound"></div>
-    <div id="container">
+    <div class="container">
         <img src="images/we2.png" alt="" id="name-img">
         <div id="header">
-            <h1 id="header-name"  class="name user_name"></h1>
+            <h1 id="header-name"  class="user_name name"></h1>
         </div>
         <img src="images/french_from1.gif" id="french" alt="">
         <div id="anim-img1">
@@ -139,10 +144,48 @@
         <img src="images/we3.png" alt="" id="last-img">
     </div>
 
-    <form action="" autocomplete="off" id="form">
-        <input type="text" name="name" id="input" required placeholder="Écrivez votre Nom ici">
-        <a href="" id="button-text">soumettre 🥳</a>
-    </form>
+
+
+            <div id="share" class="share_block">
+                <span id="" class="float-share hidden">
+                    <a class="btn whatsapp-btn" href="">
+                        <div class="whatsapp-share-text"><b> 👈 Partagez</b></div>
+                        <img class="whatsapp-icon" src="images/whatsapp.png">
+                    </a>
+                </span>
+
+                <div class="name hidden" id="create">
+                    <input class="card-title center-align name head" 
+                            type="name" 
+                            required="" 
+                            id="name" 
+                            style="color: #ffffff; background-color: #c71515" 
+                            placeholder="Écrivez votre nom">
+                    <a href="javascript:void(0)" 
+                        class="go" 
+                        id="gobtn1" 
+                        style="background-color: #c71515">Soumettre 🥳</a>
+                    </div>
+            </div>
+        
+
+    
+
+<footer>
+
+    <script>
+        var count_down_date = 'Dec 25, 2020';
+        var enter_name = 'Écrivez votre nom';
+        var enter_wish = 'Partagez 👇👇👇👇';
+        var whatsapp_msg = '&quot;\ud83d\ude4c Une surprise sp\u00e9ciale pour toi de la part de \ud83d\udc49 *nammmmeeeeee* \ud83d\udc48 %0AClique sur la ligne bleue pour voir %0A\u203c\ufe0f\ud83d\udc47\ud83d\udc47\ud83d\udc47\ud83d\udc47\u203c\ufe0f%0A &quot;'.replace(/(&quot\;)/g,"");
+        var time = {"days" : 'Jours', "hrs" : 'Hrs', "mins" : 'Min', "sec" : 'Sec'};
+    </script>
+
+
+
+    <script src="exampl-back-wrap.js"></script>
+
+</footer>
 
     <script src="2021.js"></script>
 </body>

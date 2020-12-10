@@ -24,7 +24,7 @@ function openDoor() {
     body.classList.add("open");
     body.style.overflow ="auto";
     body.style.background = `url(images/background-2.gif)`;
-    sound.innerHTML = `<audio src="audio/aid.mp3" autoplay></audio>`;
+    sound.innerHTML = `<audio src="audio/christmas1.mp3" autoplay></audio>`;
 }
 function buttonName(e) {
     e.preventDefault();
