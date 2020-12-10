@@ -11,6 +11,7 @@ a{
 /*----- body -----*/
 body {
     height:100%;
+    width:100vw;
     background:rgb(190, 39, 39);
     overflow-x:hidden;
     font-family:sans-serif;
@@ -127,30 +128,30 @@ body {
 }
 #star1 {
     width:150px;
-    left:-20%;
+    left:-40%;
     opacity:0.4;
 }
 #star2 {
     width:70px;
-    left:-10%;
+    left:-40%;
     opacity:0.4;
 }
 #star3 {
     width:40px;
     left:30%;
-    top:-20%;
+    top:-40%;
     opacity:0.5;
 }
 #star4 {
     width:80px;
     left:50%;
-    top:-20%;
+    top:-40%;
     opacity:0.6;
 }
 #star5 {
     width:30px;
     left:20%;
-    top:-20%;
+    top:-40%;
     opacity:0.4;
 }
 .open #star1 {
@@ -480,6 +481,7 @@ body {
     bottom:-50%;
     left:20%;
     visibility: hidden;
+    border-radius: 100px;
 }
 #ba4 {
     bottom:-50%;
@@ -500,6 +502,7 @@ body {
     bottom:-50%;
     left:60%;
     visibility: hidden;
+    border-radius:100px;
 }
 #ba8 {
     bottom:-50%;
@@ -621,10 +624,11 @@ body {
 
 
 /*----- content -----*/
+
 .container {
     background:rgba(12, 12, 12, 0.74) url(images/background.gif) center fixed;
+    margin: auto;
     width:500px;
-    margin:0 auto;
     text-align:center;
     display:flex;
     flex-direction:column;
@@ -634,6 +638,7 @@ body {
     padding-bottom:10rem;
     margin-top:-2rem;
 }
+
 
 /*----- name -----*/
 #name-img {
@@ -655,7 +660,6 @@ body {
 }
 #header-name {
     font-size:3.5rem;
-    color:wheat;
     margin:1rem 1rem 0rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background:linear-gradient(to right, rgb(255, 100, 100) 20%,rgb(255, 211, 66) 40%,rgb(241, 255, 45) 60%, #fc38a4 80%) ;
@@ -669,7 +673,7 @@ body {
     transform-style: preserve-3d;
     animation: shine 2s infinite alternate ease-in-out -7.5s;
     transform: rotateY(10deg) rotateX(23deg) translateZ(0);
-    text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.18);
+    text-shadow: 1px 3px 2px rgba(255, 222, 36, 0.397);
     text-transform:uppercase;
 }
 @-webkit-keyframes shine {
@@ -819,8 +823,8 @@ body {
     transform:translate(-50%);
     animation:part 2s linear infinite;
     z-index:1;
-    text-shadow: 1px 2px 3px #ff002b, 1px 2px 3px #ff0037, -1px -1px 3px #ff0037, -1px -1px 3px #ff0037;
-    color: #ffc507;
+    text-shadow: 1px 2px 3px #000000, 1px 2px 3px #020202, -1px -1px 3px #000000, -1px -1px 3px #000000;
+    color: #ffefbc;
 }
 
 @keyframes part {
@@ -851,4 +855,9 @@ body {
 
 
 /*----- input form -----*/
+/* in othere CSS file */
+
+
+
+/*------------------------------------- Media quearys ---------------------------------*/
 
