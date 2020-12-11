@@ -17,6 +17,8 @@ body {
     z-index:1000002;
     overflow: hidden;
     text-align:center;
+    display:flex;
+    justify-content: center;
 }
 /*----- body -----*/
 
@@ -626,8 +628,7 @@ body {
 
 .container {
     background:rgba(12, 12, 12, 0.74) url(images/background.gif) center fixed;
-    margin: auto;
-    width:500px;
+    max-width:500px;
     text-align:center;
     display:flex;
     flex-direction:column;
@@ -635,13 +636,14 @@ body {
     position:relative;
     border-radius:5px;
     padding-bottom:10rem;
-    margin-top:-2rem;
+    margin:-2rem 0 0 0 ;
+    overflow:hidden;
 }
 
 
 /*----- name -----*/
 #name-img {
-    width:500px;
+    max-width:100%;
 }
 #header {
     animation:wobble 5s ease-in-out infinite;
@@ -702,16 +704,10 @@ body {
 
 
 #french {
-    width:300px;
+    max-width:75%;
 }
 
-/*----- top images -----*/
-#image1, #image2 {
-    width:200px;
-    height: 200px;
-}
-
-/*----- animation of top images -----*/
+/*----- top images -----*//*----- animation of top images -----*/
 #anim-img1 {
     width:100%;
     height:200px;
@@ -719,31 +715,30 @@ body {
     margin:1rem;
 }
 #image1 {
-    transform: rotateX(10deg);
     position:absolute;
-    left:30%;
     animation: img1 4s linear infinite ;
+    width:200px;
+    height: 200px;
 }
 #image2 {
     animation:img2 5s linear infinite;
     margin-bottom:1.5rem;
-    width:250px;
-    height: 250px;
+    max-width:70%;
     border-radius:20px;
     background-color:rgb(255, 238, 85);
     padding:0.2rem;
 }
 
 @keyframes img1 {
-    0% {transform: rotate(0deg); left:30%;}
-    12.5% {transform: rotate(12deg); left:26%;}
-    25% {transform: rotate(24deg); left:23%;}
-    37.5% {transform: rotate(12deg); left:26%;}
-    50% {transform: rotate(0deg); left:30%;}
-    62.5% {transform: rotate(-12deg); left:34%;}
-    75% {transform: rotate(-24deg); left:37%;}
-    87.5% {transform: rotate(-12deg); left:34%;}
-    100% {transform: rotate(0deg); left:30%;}
+    0% {transform:translate(-50%) rotate(0deg); left:50%;}
+    12.5% {transform:translate(-50%) rotate(12deg); left:46%;}
+    25% {transform:translate(-50%) rotate(24deg); left:43%;}
+    37.5% {transform:translate(-50%) rotate(12deg); left:46%;}
+    50% {transform:translate(-50%) rotate(0deg); left:50%;}
+    62.5% {transform:translate(-50%) rotate(-12deg); left:54%;}
+    75% {transform:translate(-50%) rotate(-24deg); left:57%;}
+    87.5% {transform:translate(-50%) rotate(-12deg); left:54%;}
+    100% {transform:translate(-50%) rotate(0deg); left:50%;}
 }
 @keyframes img2 {
     0% {transform:scale(0);}
@@ -759,29 +754,32 @@ body {
 
 /*----- bottom images -----*/
 #happy2021 {
-    width:400px;
-    margin:3rem;
+    width:80%;
+    margin:3rem 0;
     border-radius:1000px;
     animation:happy 2s linear infinite ;
 }
 
 /*----- paragraphs -----*/
 #souhaite1 {
-    font-size:1.4rem;
+    font-size:1.5rem;
     color:yellow;
-    margin:8px 50px;
+    max-width:70%;
+    margin:1rem auto;
     font-family: 'Pacifico', cursive;
 }
 #souhaite2 {
-    font-size:1.4rem;
+    font-size:1.5rem;
     color:rgb(0, 255, 170);
-    margin:8px 80px;
+    margin:1rem auto;
+    max-width:70%;
     font-family: 'Pacifico', cursive;
 }
 #souhaite3 {
-    font-size:1.4rem;
+    font-size:1.5rem;
     color:rgb(255, 0, 221);
-    margin:8px 60px;
+    margin:1rem auto;
+    max-width:70%;
     font-family: 'Pacifico', cursive;
 }
 
@@ -813,17 +811,18 @@ body {
 
 /*----- last paragraph -----*/
 #part {
-    width:100%;
-    height:80px;
+    width:90%;
     font-size:1.5rem;
     font-weight:700;
     position:absolute;
     left:50%;
+    bottom:12%;
     transform:translate(-50%);
     animation:part 2s linear infinite;
     z-index:1;
     text-shadow: 1px 2px 3px #000000, 1px 2px 3px #020202, -1px -1px 3px #000000, -1px -1px 3px #000000;
     color: #ffefbc;
+    margin-bottom:2rem;
 }
 
 @keyframes part {
@@ -842,7 +841,7 @@ body {
 
 
 #last-img {
-    width:450px;
+    width:90%;
     animation:part 2s linear infinite;
     position:absolute;
     opacity:0.9;
@@ -860,3 +859,53 @@ body {
 
 /*------------------------------------- Media quearys ---------------------------------*/
 
+@media (max-width:760px) {
+    #ballon img {
+        width:80px;
+        position:absolute;
+    }
+    
+    #french {
+        max-width:75%;
+    }
+
+    
+    #souhaite1,#souhaite2,#souhaite3 {
+        font-size:1.3rem;
+    }
+
+}
+
+@media (max-width:500px) {
+    .name input[type=name] {
+        left: 3px;
+        width: 60%;
+    }
+    .go, .name input[type=name] {
+        font-size: 1.1rem;
+    }
+
+    .go {
+        right: 2px;
+        width: 35%;
+    }
+
+    #souhaite1,#souhaite2,#souhaite3 {
+        font-size:1.1rem;
+    }
+
+}
+@media (max-width:350px) {
+    .name input[type=name] {
+        left: 3px;
+        width: 61%;
+    }
+    .go, .name input[type=name] {
+        font-size: 1rem;
+    }
+
+    .go {
+        right: 2px;
+        width: 30%;
+    }
+}
