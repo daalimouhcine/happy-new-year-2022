@@ -860,23 +860,57 @@ body {
 /*------------------------------------- Media quearys ---------------------------------*/
 
 @media (max-width:760px) {
+    #left-door,#right-door {
+        height:100%;
+    }
+
+    #click .matki img {
+        width:50%;
+    }
+
     #ballon img {
         width:80px;
         position:absolute;
+    }
+
+    #header-name {
+        font-size:3rem;
     }
     
     #french {
         max-width:75%;
     }
-
     
     #souhaite1,#souhaite2,#souhaite3 {
         font-size:1.3rem;
     }
 
+    #anim-pa p {
+        font-size:1.2rem;
+        width:140%;
+        color:yellow;
+    }
+    #anim-pa p span {
+        font-weight:700;
+        font-size:1.4rem;
+    }
+
+    #part {
+        font-size:1.3rem;
+    }
 }
 
 @media (max-width:500px) {
+
+
+    #click .matki img {
+        width:40%;
+    }
+
+    #header-name {
+        font-size:2.7rem;
+    }
+
     .name input[type=name] {
         left: 3px;
         width: 60%;
@@ -894,8 +928,25 @@ body {
         font-size:1.1rem;
     }
 
+    #anim-pa p {
+        font-size:1.2rem;
+        width:150%;
+        color:yellow;
+    }
+    #anim-pa p span {
+        font-weight:700;
+        font-size:1.4rem;
+    }
+
 }
 @media (max-width:350px) {
+    #click .matki img {
+        width:30%;
+    }
+
+    #header-name {
+        font-size:2.4rem;
+    }
     .name input[type=name] {
         left: 3px;
         width: 61%;
@@ -907,5 +958,19 @@ body {
     .go {
         right: 2px;
         width: 30%;
+    }
+
+    #anim-pa p {
+        font-size:1.1rem;
+        width:150%;
+        color:yellow;
+    }
+    #anim-pa p span {
+        font-weight:700;
+        font-size:1.3rem;
+    }
+
+    #part {
+        font-size:1rem;
     }
 }
