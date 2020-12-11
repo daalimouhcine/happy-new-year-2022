@@ -105,7 +105,7 @@ body {
     top:20%;
     right:-40%;
     width:200px;
-    z-index:990;
+    z-index:100;
 }
 .open #clown {
     animation:clown 18s linear forwards;
