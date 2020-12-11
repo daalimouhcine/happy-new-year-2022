@@ -74,7 +74,7 @@
     font-size: 1.3rem;
     height: 45px;
     text-transform: none;
-    z-index:1000;
+    z-index:100;
 }
 .go, .name input[type=name], .sticky {
     padding: 8px;
