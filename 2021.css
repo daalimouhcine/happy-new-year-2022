@@ -75,12 +75,12 @@ body {
     cursor:pointer;
 }
 .open #click {
-    animation:kadoUp 1s linear forwards;
+    animation:kadoUp 1.4s linear forwards;
 }
 @keyframes kadoUp {
     0% {top:20%;}
-    70% {top:25%;}
-    100% {top:-170%;display:none}
+    30% {top:25%;}
+    100% {top:-170%;}
 }
 #click p {
     font-size:2rem;
