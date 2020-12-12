@@ -702,9 +702,25 @@ body {
     }
 }
 
+#lang {
+    height:30px;
+    padding:4px 7px;
+    width:70px;
+    background: rgba(255, 255, 0, 0.671);
+    border:1px solid rgba(255, 0, 0, 0.753);
+    border-radius:5px;
+    cursor:pointer;
+    color:rgba(255, 0, 0, 0.726);
+    font-family:cursive;
+    font-weight:700;
+    margin:0 auto;
+    outline:red;
+}
+
 
 #french {
     max-width:75%;
+    margin-top:1rem;
 }
 
 /*----- top images -----*//*----- animation of top images -----*/
@@ -728,6 +744,14 @@ body {
     background-color:rgb(255, 238, 85);
     padding:0.2rem;
 }
+#image22 {
+    animation:img2 5s linear infinite;
+    margin-bottom:1.5rem;
+    max-width:70%;
+    border-radius:20px;
+    padding:0.2rem;
+}
+
 
 @keyframes img1 {
     0% {transform:translate(-50%) rotate(0deg); left:50%;}
@@ -757,7 +781,10 @@ body {
     width:80%;
     margin:3rem 0;
     border-radius:1000px;
-    animation:happy 2s linear infinite ;
+}
+#happy20219 {
+    width:80%;
+    margin:3rem 0;
 }
 
 /*----- paragraphs -----*/
@@ -788,15 +815,20 @@ body {
     height:50px;
     position:relative;
     overflow:hidden;
-    margin-bottom:5rem;
+    margin-bottom:3rem;
+}
+@media (min-width:500px) {
+    #anim-pa {
+        margin-bottom:5rem;
+    }
 }
 #anim-pa p {
-    font-size:1.4rem;
+    font-size:1.5rem;
     font-family: 'Comfortaa', cursive;
     animation:anim-pa 15s linear infinite;
     position:absolute;
     top:15%;
-    width:130%;
+    min-width:200%;
     color:yellow;
 }
 #anim-pa p span {
@@ -806,7 +838,15 @@ body {
 
 @keyframes anim-pa {
     0% {left:100%}
-    100% {left:-150%}
+    100% {left:-180%}
+}
+
+#anim-pa #te {
+    text-shadow: 1px 2px 1px #8edbff;
+    color: rgb(4, 162, 202);
+    font-size:1.2rem;
+    font-weight:500;
+
 }
 
 /*----- last paragraph -----*/
@@ -914,6 +954,9 @@ footer p span {
         font-size:1.3rem;
         margin-bottom:2rem;
     }
+    footer p {
+        font-size:1.2rem;
+    }
 }
 
 @media (max-width:500px) {
@@ -954,6 +997,13 @@ footer p span {
         font-size:1.4rem;
     }
 
+    footer {
+        bottom:2.5%;
+    }
+    footer p {
+        font-size:1rem;
+    }
+
 }
 @media (max-width:350px) {
     #click .matki img {
@@ -980,6 +1030,7 @@ footer p span {
         font-size:1.1rem;
         width:150%;
         color:yellow;
+        margin:0;
     }
     #anim-pa p span {
         font-weight:700;
@@ -987,6 +1038,10 @@ footer p span {
     }
 
     #part {
+        font-size:1rem;
+    }
+
+    footer p {
         font-size:1rem;
     }
 }
