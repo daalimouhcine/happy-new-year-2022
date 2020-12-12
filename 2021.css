@@ -635,7 +635,7 @@ body {
     align-items: center;
     position:relative;
     border-radius:5px;
-    padding-bottom:10rem;
+    padding-bottom:15rem;
     margin:-2rem 0 0 0 ;
     overflow:hidden;
 }
@@ -816,26 +816,25 @@ body {
     font-weight:700;
     position:absolute;
     left:50%;
-    bottom:12%;
     transform:translate(-50%);
     animation:part 2s linear infinite;
     z-index:1;
     text-shadow: 1px 2px 3px #000000, 1px 2px 3px #020202, -1px -1px 3px #000000, -1px -1px 3px #000000;
     color: #ffefbc;
-    margin-bottom:2rem;
+    margin-bottom:3rem;
 }
 
 @keyframes part {
-    0% {bottom:5%;}
-    20% {bottom:5.5%;}
-    30% {bottom:5%;}
-    40% {bottom:5.5%;}
-    50% {bottom:6%;}
-    60% {bottom:5.5%;}
-    70% {bottom:6%;}
-    80% {bottom:5%;}
-    90% {bottom:5%;}
-    100% {bottom:5%;}
+    0% {bottom:8%;}
+    20% {bottom:8.5%;}
+    30% {bottom:8%;}
+    40% {bottom:8.5%;}
+    50% {bottom:9%;}
+    60% {bottom:8.5%;}
+    70% {bottom:9%;}
+    80% {bottom:8%;}
+    90% {bottom:8%;}
+    100% {bottom:8%;}
 }
 
 
@@ -856,6 +855,22 @@ body {
 /* in othere CSS file */
 
 
+
+/*----- footer Dl -----*/
+footer {
+    display: flex;
+    width:100%;
+    position:absolute;
+    bottom:2%;
+    z-index:100;
+    justify-content: center;
+    color:white;
+}
+footer p span {
+    font-family:Caveat;
+    font-size:1.5rem;
+}
+/*----- footer Dl -----*/
 
 /*------------------------------------- Media quearys ---------------------------------*/
 
@@ -897,6 +912,7 @@ body {
 
     #part {
         font-size:1.3rem;
+        margin-bottom:2rem;
     }
 }
 
