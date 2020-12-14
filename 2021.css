@@ -635,7 +635,7 @@ body {
     align-items: center;
     position:relative;
     border-radius:5px;
-    padding-bottom:35rem;
+    padding-bottom:12rem;
     margin:-2rem 0 0 0 ;
     overflow:hidden;
 }
@@ -812,16 +812,12 @@ body {
 
 /*----- animating the bottom paragraphs -----*/
 #anim-pa {
-    height:50px;
+    height:40px;
     position:relative;
     overflow:hidden;
-    margin-bottom:3rem;
+    margin-bottom:1rem;
 }
-@media (min-width:500px) {
-    #anim-pa {
-        margin-bottom:5rem;
-    }
-}
+
 #anim-pa p {
     font-size:1.5rem;
     font-family: 'Comfortaa', cursive;
@@ -850,56 +846,58 @@ body {
 }
 
 /*----- last paragraph -----*/
+
+#con {
+    margin-bottom:rem;
+    height:150px;
+    width: 100%;
+    position:relative;
+}
 #part {
     width:90%;
-    font-size:1.5rem;
-    font-weight:700;
     position:absolute;
-    left:50%;
-    transform:translate(-50%);
-    animation:part 2s linear infinite;
-    z-index:1;
-    text-shadow: 1px 2px 3px #000000, 1px 2px 3px #020202, -1px -1px 3px #000000, -1px -1px 3px #000000;
-    color: #ffefbc;
-    margin-bottom:3rem;
+    font-size:1.55rem;
+    font-weight:700;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    z-index:2;
+    color:rgb(230, 60, 18);
+    text-shadow: 1px 2px 3px #ffe923, 1px 2px 3px #ffe923, -1px -1px 3px #ffe923, -1px -1px 3px #ffe923;
+    padding-bottom:1.5rem;
+    animation:part 3s linear infinite;
 }
 
 @keyframes part {
-    0% {bottom:17%;}
-    20% {bottom:17.5%;}
-    30% {bottom:17%;}
-    40% {bottom:17.5%;}
-    50% {bottom:18%;}
-    60% {bottom:17.5%;}
-    70% {bottom:18%;}
-    80% {bottom:17%;}
-    90% {bottom:17%;}
-    100% {bottom:17%;}
+    0% {top:40%;}
+    20% {top:45.5%;}
+    30% {top:39%;}
+    40% {top:35.5%;}
+    50% {top:51%;}
+    60% {top:36.5%;}
+    70% {top:51%;}
+    80% {top:40%;}
+    90% {top:51%;}
+    100% {top:40%;}
 }
 
 
 
 #last-img {
-    width:90%;
-    animation:part 2s linear infinite;
+    width:92%;
     position:absolute;
-    opacity:0.9;
-    z-index:0;
-    transform:translate(-50%)
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    z-index:1;    
+    animation:part 3s linear infinite;
 }
 /*----- content -----*/
 
 
 
 /*----- ad -----*/
-#ad {
 
-    position:absolute;
-    left:50%;
-    transform:translate(-50%);
-    bottom:8%;
-
-}
 /*----- ad -----*/
 
 
@@ -916,7 +914,7 @@ footer {
     width:100%;
     position:absolute;
     bottom:2%;
-    z-index:100;
+    z-index:10;
     justify-content: center;
     color:white;
 }
@@ -929,12 +927,29 @@ footer p span {
 /*------------------------------------- Media quearys ---------------------------------*/
 
 @media (max-width:760px) {
+    #star1 {
+        width:100px;
+    }
+    #snow2 {
+        width:50px;
+    }
+    #snow4 {
+        width:90px;
+    }
+    #st3 {
+        width:94px;
+    }
+
     #left-door,#right-door {
         height:100%;
     }
 
     #click .matki img {
         width:50%;
+    }
+
+    #clown {
+        width:150px;
     }
 
     #ballon img {
@@ -945,6 +960,10 @@ footer p span {
     #header-name {
         font-size:3rem;
     }
+
+    #lang {
+        font-size:0.8rem;
+    }
     
     #french {
         max-width:75%;
@@ -953,6 +972,7 @@ footer p span {
     #souhaite1,#souhaite2,#souhaite3 {
         font-size:1.3rem;
     }
+
 
     #anim-pa p {
         font-size:1.2rem;
@@ -964,10 +984,7 @@ footer p span {
         font-size:1.4rem;
     }
 
-    #part {
-        font-size:1.3rem;
-        margin-bottom:2rem;
-    }
+
     footer p {
         font-size:1.2rem;
     }
@@ -978,6 +995,10 @@ footer p span {
 
     #click .matki img {
         width:40%;
+    }
+
+    #clown {
+        width:150px;
     }
 
     #header-name {
@@ -1009,6 +1030,10 @@ footer p span {
     #anim-pa p span {
         font-weight:700;
         font-size:1.4rem;
+    }
+
+    #part {
+        font-size:1.25rem;
     }
 
     footer {
@@ -1051,9 +1076,6 @@ footer p span {
         font-size:1.3rem;
     }
 
-    #part {
-        font-size:1rem;
-    }
 
     footer p {
         font-size:1rem;
