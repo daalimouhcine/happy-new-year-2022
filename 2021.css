@@ -635,7 +635,7 @@ body {
     align-items: center;
     position:relative;
     border-radius:5px;
-    padding-bottom:15rem;
+    padding-bottom:35rem;
     margin:-2rem 0 0 0 ;
     overflow:hidden;
 }
@@ -865,16 +865,16 @@ body {
 }
 
 @keyframes part {
-    0% {bottom:8%;}
-    20% {bottom:8.5%;}
-    30% {bottom:8%;}
-    40% {bottom:8.5%;}
-    50% {bottom:9%;}
-    60% {bottom:8.5%;}
-    70% {bottom:9%;}
-    80% {bottom:8%;}
-    90% {bottom:8%;}
-    100% {bottom:8%;}
+    0% {bottom:17%;}
+    20% {bottom:17.5%;}
+    30% {bottom:17%;}
+    40% {bottom:17.5%;}
+    50% {bottom:18%;}
+    60% {bottom:17.5%;}
+    70% {bottom:18%;}
+    80% {bottom:17%;}
+    90% {bottom:17%;}
+    100% {bottom:17%;}
 }
 
 
@@ -888,6 +888,20 @@ body {
     transform:translate(-50%)
 }
 /*----- content -----*/
+
+
+
+/*----- ad -----*/
+#ad {
+
+    position:absolute;
+    left:50%;
+    transform:translate(-50%);
+    bottom:8%;
+
+}
+/*----- ad -----*/
+
 
 
 
