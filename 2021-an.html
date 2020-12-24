@@ -15,6 +15,7 @@
 </script>
 
 
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/kado.png">
@@ -36,7 +37,7 @@
     
     <link type="text/css" rel="stylesheet" href="2021-2.css" media="screen,projection">
     
-    <link rel="stylesheet" href="2021.css">
+    <link rel="stylesheet" href="2021-an.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans+Caption&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap" rel="stylesheet">
@@ -47,6 +48,7 @@
 
 </head>
 <body>
+    <script src="loading.js"></script>
     <div id="door">
         <img src="images/—Pngtree—light.jpg" alt="" id="left-door">
         <img src="images/—Pngtree—light.jpg" alt="" id="right-door">
@@ -152,7 +154,7 @@
             <h1 id="header-name"  class="user_name name"></h1>
         </div>
         <!--button language-->
-        <a href="index.html" id="lang">Français</a>
+        <a href="2021.html" id="lang">Français</a>
         <br>
         <img src="images/wishing2.gif" id="french" alt="">
         <!--first top img with animation-->
@@ -161,6 +163,59 @@
         </div>
         <!--second top img with animation-->
         <img src="images/1.png" alt="" id="image22">
+        <!--img Snow man with animation of crismas thres-->
+        <style>
+            .circle-item>li:last-child>img{width:10em;height:10em;top:1em;left:3.5em}.circle-item{list-style:none}.circle-item>li>img{display:block;position:absolute;top:25%;left:25%;width:6em;height:6em;border-radius:0;box-shadow:0 4px 8px 0 rgba(0,0,0,.2);border:solid 0 tomato;-webkit-transition:.15s;transition:.15s}.circle-container{width:12em;height:5em;margin:10em auto}.circle-item>:nth-of-type(1){transform:rotate(0) translate(13em) rotate(0)}.circle-item>:nth-of-type(2){transform:rotate(51deg) translate(13em) rotate(51deg)}.circle-item>:nth-of-type(3){transform:rotate(102deg) translate(13em) rotate(102deg)}.circle-item>:nth-of-type(4){transform:rotate(153deg) translate(13em) rotate(153deg)}.circle-item>:nth-of-type(5){transform:rotate(204deg) translate(13em) rotate(204deg)}.circle-item>:nth-of-type(6){transform:rotate(255deg) translate(13em) rotate(255deg)}.circle-item>:nth-of-type(7){transform:rotate(306deg) translate(13em) rotate(306deg)}.circle-item>:nth-of-type(8){transform:rotate(228deg) translate(3.6em) rotate(-228deg)}
+        </style>
+        <div class="circle-container" style="display:block;">
+            <ul class="circle-item">
+                <li><img class="p1" src="images/46.png"></li>
+                <li><img class="p1" src="images/46.png"></li>
+                <li><img class="p1" src="images/46.png"></li>
+                <li><img class="p1" src="images/46.png"></li>
+                <li><img class="p1" src="images/46.png"></li>
+                <li><img class="p1" src="images/46.png"></li>
+                <li><img class="p1" src="images/46.png"></li>
+                <li><img class="p1" src="images/44.gif"></li>
+                </ul>
+        </div>
+        <script>
+            $(function() {
+
+                var deg = 0;
+                var rotate = 1;
+                var club_rotate = setInterval(club_rotate, 25);
+                $('.circle-item > li').not(".circle-item > *:nth-of-type(8)").mouseenter(function() {
+                    rotate = 0
+                });
+                $('.circle-item > li').not(".circle-item > *:nth-of-type(8)").mouseleave(function() {
+                    rotate = 1
+                });
+                function club_rotate() {
+                    if (rotate == 0) {
+                        return
+                    }
+                    deg = get_deg(deg + 1);
+                    var deg0 = deg;
+                    var $data = $('.circle-item').children().not(".circle-item > *:nth-of-type(8)");
+                    var length = 8;
+                    if ($(window).width() <= 540) {
+                        length = 9
+                    }
+                    $data.each(function() {
+                        $(this).css("-webkit-transform", "rotate(" + deg0 + "deg) translate(" + length + "em) rotate(-" + deg0 + "deg)").css("transform", "rotate(" + deg0 + "deg) translate(" + length + "em) rotate(-" + deg0 + "deg)");
+                        deg0 = get_deg(deg0 + 51)
+                    })
+                }
+
+                function get_deg(deg0) {
+                    if (deg0 > 360)
+                        return (deg0 - 360);
+                    else return deg0
+                }
+            });
+                
+        </script>
         <!-- Paragraphs -->
         <p id="souhaite1">Christmas and New Year is about <br> spending time with family and friends.</p>
         <p id="souhaite2">It’s about creating happy memories <br> that will last a lifetime.</p>
@@ -229,7 +284,6 @@
     </script>
     <!--scripts-->
     <script src="exampl-back-wrap.js"></script>
-    <script src="2021.js"></script>
-    <script src="loading.js"></script>
+    <script src="2021-an.js"></script>
 </body>
 </html>
