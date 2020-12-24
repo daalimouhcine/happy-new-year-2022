@@ -15,13 +15,12 @@
 </script>
 
 
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/kado.png">
     <link rel="icon" type="image/png" href="images/kado.png">
 
-    <title>Happy new Year 2021</title>
+    <title>Bonne année 2021</title>
 
     <meta name="description" content="Carte de voeux de nouvel an 2021">
     <meta name="keywords" content="Carte de voeux de nouvel an, bonne année, bonne 2021,anneé 2021">
@@ -37,7 +36,7 @@
     
     <link type="text/css" rel="stylesheet" href="2021-2.css" media="screen,projection">
     
-    <link rel="stylesheet" href="2021-an.css">
+    <link rel="stylesheet" href="2021.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=PT+Sans+Caption&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Pacifico&display=swap" rel="stylesheet">
@@ -48,12 +47,12 @@
 
 </head>
 <body>
-    <script src="loading.js"></script>
+    <!--first red door-->
     <div id="door">
         <img src="images/—Pngtree—light.jpg" alt="" id="left-door">
         <img src="images/—Pngtree—light.jpg" alt="" id="right-door">
         <div id="click">
-            <p>Touch the Gift</p>
+            <p>click ici</p>
             <p>👇👇👇👇👇</p>
             <div class="matki">
                 <img src="images/kado.png" alt="">
@@ -154,84 +153,28 @@
             <h1 id="header-name"  class="user_name name"></h1>
         </div>
         <!--button language-->
-        <a href="2021.html" id="lang">Français</a>
+        <a href="2021-an.html" id="lang">English</a>
         <br>
-        <img src="images/wishing2.gif" id="french" alt="">
+        <img src="images/french_from1.gif" id="french" alt="">
         <!--first top img with animation-->
         <div id="anim-img1">
             <img src="images/2021.png" alt="" id="image1">
         </div>
         <!--second top img with animation-->
-        <img src="images/1.png" alt="" id="image22">
-        <!--img Snow man with animation of crismas thres-->
-        <style>
-            .circle-item>li:last-child>img{width:10em;height:10em;top:1em;left:3.5em}.circle-item{list-style:none}.circle-item>li>img{display:block;position:absolute;top:25%;left:25%;width:6em;height:6em;border-radius:0;box-shadow:0 4px 8px 0 rgba(0,0,0,.2);border:solid 0 tomato;-webkit-transition:.15s;transition:.15s}.circle-container{width:12em;height:5em;margin:8em auto 10em}.circle-item>:nth-of-type(1){transform:rotate(0) translate(13em) rotate(0)}.circle-item>:nth-of-type(2){transform:rotate(51deg) translate(13em) rotate(51deg)}.circle-item>:nth-of-type(3){transform:rotate(102deg) translate(13em) rotate(102deg)}.circle-item>:nth-of-type(4){transform:rotate(153deg) translate(13em) rotate(153deg)}.circle-item>:nth-of-type(5){transform:rotate(204deg) translate(13em) rotate(204deg)}.circle-item>:nth-of-type(6){transform:rotate(255deg) translate(13em) rotate(255deg)}.circle-item>:nth-of-type(7){transform:rotate(306deg) translate(13em) rotate(306deg)}.circle-item>:nth-of-type(8){transform:rotate(228deg) translate(3.6em) rotate(-228deg)}
-        </style>
-        <div class="circle-container" style="display:block;">
-            <ul class="circle-item">
-                <li><img class="p1" src="images/46.png"></li>
-                <li><img class="p1" src="images/46.png"></li>
-                <li><img class="p1" src="images/46.png"></li>
-                <li><img class="p1" src="images/46.png"></li>
-                <li><img class="p1" src="images/46.png"></li>
-                <li><img class="p1" src="images/46.png"></li>
-                <li><img class="p1" src="images/46.png"></li>
-                <li><img class="p1" src="images/44.gif"></li>
-                </ul>
-        </div>
-        <script>
-            $(function() {
-
-                var deg = 0;
-                var rotate = 1;
-                var club_rotate = setInterval(club_rotate, 25);
-                $('.circle-item > li').not(".circle-item > *:nth-of-type(8)").mouseenter(function() {
-                    rotate = 0
-                });
-                $('.circle-item > li').not(".circle-item > *:nth-of-type(8)").mouseleave(function() {
-                    rotate = 1
-                });
-                function club_rotate() {
-                    if (rotate == 0) {
-                        return
-                    }
-                    deg = get_deg(deg + 1);
-                    var deg0 = deg;
-                    var $data = $('.circle-item').children().not(".circle-item > *:nth-of-type(8)");
-                    var length = 8;
-                    if ($(window).width() <= 540) {
-                        length = 9
-                    }
-                    if ($(window).width() <= 350) {
-                        length = 6.5
-                    }
-                    $data.each(function() {
-                        $(this).css("-webkit-transform", "rotate(" + deg0 + "deg) translate(" + length + "em) rotate(-" + deg0 + "deg)").css("transform", "rotate(" + deg0 + "deg) translate(" + length + "em) rotate(-" + deg0 + "deg)");
-                        deg0 = get_deg(deg0 + 51)
-                    })
-                }
-
-                function get_deg(deg0) {
-                    if (deg0 > 360)
-                        return (deg0 - 360);
-                    else return deg0
-                }
-            });
-                
-        </script>
+        <img src="images/ny-97.jpg" alt="" id="image2">
         <!-- Paragraphs -->
-        <p id="souhaite1">Christmas and New Year is about <br> spending time with family and friends.</p>
-        <p id="souhaite2">It’s about creating happy memories <br> that will last a lifetime.</p>
-        <p id="souhaite3">Merry Christmas and Happy New Year</p>
+        <p id="souhaite1">Pour la nouvelle année 2021, <br> Je vous souhaite le meilleur pour votre environnement!</p>
+        <p id="souhaite2">"Que cette année nouvelle t'apporte tout ce que tu désires <br> qu'elle te réserve également des bonheurs inattendus."</p>
+        <p id="souhaite3">Que l’année 2021 soit parsemée d’éclats de joie, <br> de pétales de bonheur, qu’elle soit éclairée par la flamme <br> de l’amour et l’étincelle de l’amitié. Bonne et heureuse année !</p>
         <!--last img-->
-        <img src="images/9.png" alt="" id="happy20219">
+        <img src="images/sticker-2021.jpg" alt="" id="happy2021">
         <!--paragraph moving from right to left-->
         <div id="anim-pa">
-            <p><span class="name user_name"></span> <span id="te"> Wishing You Merry Christmas and Happy New Year </span></p>
+            <p><span class="name user_name"></span> <span id="te"> te-souhaite une bonne année </span></p>
         </div>
         <!--last paragraph width img and animation-->
         <div id="con">
-            <p id="part">😇 From ~<span class="name user_name"></span>~ 😇</p>
+            <p id="part">😇 de la part de ~<span class="name user_name"></span>~ 😇</p>
             <img src="images/we3.png" alt="" id="last-img">
         </div>
         <!--advertisement-->
@@ -256,7 +199,7 @@
             <div id="share" class="share_block">
                 <span id="" class="float-share hidden">
                     <a class="btn whatsapp-btn" href="">
-                        <div class="whatsapp-share-text"><b> 👈 Share</b></div>
+                        <div class="whatsapp-share-text"><b> 👈 Partagez</b></div>
                         <img class="whatsapp-icon" src="images/whatsapp.png">
                     </a>
                 </span>
@@ -267,11 +210,11 @@
                             required="" 
                             id="name" 
                             style="color: #ffffff; background-color: #c71515" 
-                            placeholder="Enter your name">
+                            placeholder="Écrivez votre nom">
                     <a href="javascript:void(0)" 
                         class="go" 
                         id="gobtn1" 
-                        style="background-color: #c71515">Go 🥳</a>
+                        style="background-color: #c71515">Soumettre 🥳</a>
                     </div>
             </div>
         
@@ -280,13 +223,14 @@
     <!--add name to the link-->
     <script>
         var count_down_date = 'Dec 25, 2020';
-        var enter_name = 'Enter Your Name';
-        var enter_wish = 'Enter your name in the box below, create your wish and Share with your Friends and Family 👇👇👇👇';
-        var whatsapp_msg = '&quot;\ud83d\udd14 *Hello* \ud83d\udd14%0A\ud83d\udd14 *Hello* \ud83d\udd14%0A\ud83d\udd14 *Hello* \ud83d\udd14%0A\ud83d\udca3\ud83d\udc96 *Its a Surprise*  \ud83c\udf87\ud83e\udd17%0A*Open to see* \ud83e\udd2b\ud83e\udd2d%0A\u203c\ufe0f\ud83d\udc47\ud83d\udc47\ud83d\udc47\u203c\ufe0f%0A&quot;'.replace(/(&quot\;)/g,"");
-        var time = {"days" : 'Days', "hrs" : 'Hrs', "mins" : 'Min', "sec" : 'Sec'};
+        var enter_name = 'Écrivez votre nom';
+        var enter_wish = 'Entrez votre nom dans la case ci-dessous, créez votre souhait et partagez avec vos amis et votre famille 👇👇👇👇';
+        var whatsapp_msg = '&quot;\ud83d\ude4c Une surprise sp\u00e9ciale pour toi de la part de \ud83d\udc49 *nammmmeeeeee* \ud83d\udc48 %0AClique sur la ligne bleue pour voir %0A\u203c\ufe0f\ud83d\udc47\ud83d\udc47\ud83d\udc47\ud83d\udc47\u203c\ufe0f%0A &quot;'.replace(/(&quot\;)/g,"");
+        var time = {"days" : 'Jours', "hrs" : 'Hrs', "mins" : 'Min', "sec" : 'Sec'};
     </script>
     <!--scripts-->
     <script src="exampl-back-wrap.js"></script>
-    <script src="2021-an.js"></script>
+    <script src="2021.js"></script>
+    <script src="loading.js"></script>
 </body>
 </html>
