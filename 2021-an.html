@@ -186,10 +186,10 @@
                 var rotate = 1;
                 var club_rotate = setInterval(club_rotate, 25);
                 $('.circle-item > li').not(".circle-item > *:nth-of-type(8)").mouseenter(function() {
-                    rotate = 0
+                    rotate = 1
                 });
                 $('.circle-item > li').not(".circle-item > *:nth-of-type(8)").mouseleave(function() {
-                    rotate = 1
+                    rotate = 0
                 });
                 function club_rotate() {
                     if (rotate == 0) {
