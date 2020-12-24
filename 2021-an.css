@@ -990,6 +990,7 @@ footer p span {
     }
 
 
+
     footer p {
         font-size:1.2rem;
     }
@@ -1079,6 +1080,21 @@ footer p span {
     #anim-pa p span {
         font-weight:700;
         font-size:1.3rem;
+    }
+
+    .circle-item>li:last-child>img {
+        width:8rem !important;
+        height:8rem !important;
+    }
+    .circle-item>li>img {
+        width:4.5rem !important;
+        height:4.6rem !important;
+        left:2.5em !important;
+    }
+    .circle-container{
+        width:9.7em !important;
+        height:5em !important;
+        margin:5em auto 8em !important;
     }
 
 
