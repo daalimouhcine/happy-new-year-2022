@@ -1,0 +1,1092 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+a{
+    text-decoration: none;
+}
+
+
+/*----- body -----*/
+body {
+    height:100%;
+    background:rgb(190, 39, 39);
+    overflow-x:hidden;
+    font-family:sans-serif;
+    z-index:1000002;
+    overflow: hidden;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    
+}
+/*----- body -----*/
+
+
+
+/*----- doors -----*/
+#door {
+    position:fixed;
+    z-index:1000;
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction:row;
+}
+.open #door {
+    animation:doorOpen 3s linear forwards;
+}
+@keyframes doorOpen {
+    0% {top:0%}
+    90% {top:0%}
+    100% {top:-100%;display: none;}
+}
+#left-door {
+    width:50.3%;
+    height:110%;
+    transform:scaleX(-1);
+}
+.open #left-door {
+    animation:leftOpen 2s linear 0.5s forwards;
+}
+@keyframes leftOpen {
+    0% {transform:rotateY(0deg) translateZ(-500px);}
+    100% {transform:rotateY(90deg) translateZ(-500px);display:none}
+}
+#right-door {
+    width:50.3%;
+    height:110%;
+}
+.open #right-door {
+    animation:rightOpen 2s linear 0.5s forwards;
+}
+@keyframes rightOpen {
+    0% {transform:rotateY(0deg) translateZ(500px);}
+    100% {transform:rotateY(90deg) translateZ(500px);display:none}
+}
+
+#click {
+    position:fixed;
+    width:100%;
+    height:100px;
+    top:20%;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    padding-bottom:18rem;
+    cursor:pointer;
+}
+.open #click {
+    animation:kadoUp 1.4s linear forwards;
+}
+@keyframes kadoUp {
+    0% {top:20%;}
+    30% {top:25%;}
+    100% {top:-170%;}
+}
+#click p {
+    font-size:2rem;
+    font-weight:700;
+    text-shadow: 1px 2px 3px #ff002b, 1px 2px 3px #ff0037, -1px -1px 3px #ff0037, -1px -1px 3px #ff0037;
+    color: #fffb22;
+}
+#click div {
+    animation:aadisoni 5s linear infinite;
+    top:40%;
+    left:40%;
+}
+@keyframes aadisoni{0%{transform:translate(0px,0px) rotate(0deg)}15%{transform:translate(-25px,0px) rotate(-5deg)}30%{transform:translate(20px,0px) rotate(3deg)}45%{transform:translate(-15px,0px) rotate(-3deg)}60%{transform:translate(10px,0px) rotate(2deg)}75%{transform:translate(-5px,0px) rotate(-1deg)}100%{transform:translate(0px,0px) rotate(0deg)}}@-webkit-keyframes aadisoni{0%{-webkit-transform:translate(0px,0px) rotate(0deg)}15%{-webkit-transform:translate(-25px,0px) rotate(-5deg)}30%{-webkit-transform:translate(20px,0px) rotate(3deg)}45%{-webkit-transform:translate(-15px,0px) rotate(-3deg)}60%{-webkit-transform:translate(10px,0px) rotate(2deg)}75%{-webkit-transform:translate(-5px,0px) rotate(-1deg)}100%{-webkit-transform:translate(0px,0px) rotate(0deg)}}
+
+/*----- doors -----*/
+
+
+
+/*----- background animation -----*/
+#clown {
+    position: fixed;
+    top:20%;
+    right:-40%;
+    width:200px;
+    z-index:100;
+}
+.open #clown {
+    animation:clown 18s linear forwards;
+}
+@keyframes clown {
+    0% {right:-20%}
+    100% {right:100%}
+}
+
+#stars-background {
+    position: fixed;
+    z-index:50;
+    height: 100%;
+    width:100%;
+    pointer-events:none;
+}
+#stars-background img {
+    position:absolute;
+}
+#star1 {
+    width:150px;
+    left:-40%;
+    opacity:0.4;
+}
+#star2 {
+    width:70px;
+    left:-40%;
+    opacity:0.4;
+}
+#star3 {
+    width:40px;
+    left:30%;
+    top:-40%;
+    opacity:0.5;
+}
+#star4 {
+    width:80px;
+    left:50%;
+    top:-40%;
+    opacity:0.6;
+}
+#star5 {
+    width:30px;
+    left:20%;
+    top:-40%;
+    opacity:0.4;
+}
+.open #star1 {
+    animation:star1 20s linear infinite 15s;
+}
+.open #star2 {
+    animation:star2 10s linear infinite 20s;
+}
+.open #star3 {
+    animation:star3 8s linear infinite  2s;
+}
+.open #star4 {
+    animation:star4 12s linear infinite 27s;
+}
+.open #star5 {
+    animation:star5 10s linear infinite 7s ;
+}
+@keyframes star1 {
+    0% {top:-20%;left:0%;transform:rotate(0deg)}
+    50% {top:130%;left:50%;}
+    100% {top:350%;left:100%;transform:rotate(800deg)}
+}
+@keyframes star2 {
+    0% {top:-20%;left:90%;transform:rotate(0deg)}
+    50% {top:90%;left:50%;}
+    100% {top:190%;left:-10%;transform:rotate(400deg)}
+}
+@keyframes star3 {
+    0% {top:-20%;left:30%;transform:rotate(0deg)}
+    50% {top:50%;left:20%;}
+    100% {top:120%;left:10%;transform:rotate(800deg)}
+}
+@keyframes star4 {
+    0% {top:-20%;left:50%;transform:rotate(0deg)}
+    50% {top:70%;left:75%;}
+    100% {top:170%;left:100%;transform:rotate(600deg)}
+}
+@keyframes star5 {
+    0% {top:-20%;left:20%;transform:rotate(0deg)}
+    50% {top:100%;left:20%;}
+    100% {top:210%;left:20%;transform:rotate(800deg)}
+}
+
+#blue1 {
+    width:100px;
+    top:-20%;
+    opacity:0.5;
+}
+#blue2 {
+    width:60px;
+    top:-20%;
+    opacity:0.4;
+}
+#blue3 {
+    width:30px;
+    top:-20%;
+    opacity:0.6;
+}
+.open #blue1 {
+    animation:blue1 14s linear infinite 17s;
+}
+.open #blue2 {
+    animation:blue2 10s linear infinite 25s;
+}
+.open #blue3 {
+    animation:blue3 25s linear infinite 10s;
+}
+@keyframes blue1 {
+    0% {top:-20%;left:60%;transform:rotate(0deg)}
+    50% {top:80%;left:30%;}
+    100% {top:180%;left:0%;transform:rotate(1100deg)}
+}
+@keyframes blue2 {
+    0% {top:-20%;left:12%;transform:rotate(0deg)}
+    50% {top:50%;left:20%;}
+    100% {top:150%;left:30%;transform:rotate(700deg)}
+}
+@keyframes blue3 {
+    0% {top:-20%;left:90%;transform:rotate(0deg)}
+    50% {top:100%;left:80%;}
+    100% {top:210%;left:70%;transform:rotate(800deg)}
+}
+
+#snow1 {
+    top:-20%;
+    width:50px;
+    opacity:0.6;
+}
+#snow2 {
+    top:-20%;
+    width:70px;
+    opacity:0.6;
+}
+#snow3 {
+    top:-20%;
+    width:30px;
+    opacity:0.7;
+}
+#snow4 {
+    top:-20%;
+    width:110px;
+    opacity:0.7;
+}
+.open #snow1 {
+    animation:snow1 11s linear infinite 10s;
+}
+.open #snow2 {
+    animation:snow2 10s linear infinite 15s;
+}
+.open #snow3 {
+    animation:snow3 20s linear infinite ;
+}
+.open #snow4 {
+    animation:snow3 15s linear infinite 5s;
+}
+
+@keyframes snow1 {
+    0% {top:-20%;left:10%;transform:rotateY(0deg) rotate(0deg)}
+    50% {top:100%;left:20%;}
+    100% {top:210%;left:30%;transform:rotateY(450deg) rotate(200deg)}
+}
+@keyframes snow2 {
+    0% {top:-20%;left:40%;transform:rotateY(0deg) rotate(0deg)}
+    50% {top:100%;left:60%;}
+    100% {top:210%;left:80%;transform:rotateY(380deg) rotate(250deg)}
+}
+@keyframes snow3 {
+    0% {top:-20%;left:80%;transform:rotateY(0deg) rotate(0deg)}
+    50% {top:100%;left:40%;}
+    100% {top:210%;left:0%;transform:rotateY(590deg) rotate(400deg)}
+}
+@keyframes snow4 {
+    0% {top:-20%;left:90%;transform:rotateY(0deg) rotate(0deg)}
+    50% {top:100%;left:70%;}
+    100% {top:210%;left:50%;transform:rotateY(650deg) rotate(400deg)}
+}
+
+#no1 {
+    top:-20%;
+    width:40px;
+    opacity:0.7;
+}
+#no2 {
+    top:-20%;
+    width:30px;
+    opacity:0.5;
+}
+.open #no1 {
+    animation:no1 15s linear infinite 15s;
+}
+.open #no2 {
+    animation:no2 7s linear infinite 2s;
+}
+@keyframes no1 {
+    0% {top:-20%;left:90%;transform:rotate(0deg)}
+    50% {top:100%;left:80%;}
+    100% {top:210%;left:70%;transform:rotate(450deg)}
+}
+@keyframes no2 {
+    0% {top:-20%;left:10%;transform:rotate(0deg)}
+    50% {top:100%;left:60%;}
+    100% {top:210%;left:110%;transform:rotate(450deg)}
+}
+
+#light1 {
+    top:-20%;
+    width:70px;
+}
+#light2 {
+    top:-20%;
+    width:100px;
+}
+#light3 {
+    top:-20%;
+    width:60px;
+}
+.open #light1 {
+    animation:light1 10s linear infinite 7s;
+}
+.open #light2 {
+    animation:light2 17s linear infinite ;
+}
+.open #light3 {
+    animation:light3 13s linear infinite 15s ;
+}
+@keyframes light1 {
+    0% {top:-20%;left:80%;transform:rotate(0deg)}
+    50% {top:100%;left:85%;}
+    100% {top:210%;left:90%;transform:rotate(3050deg)}
+}
+@keyframes light2 {
+    0% {top:-20%;left:10%;transform:rotate(0deg)}
+    50% {top:100%;left:60%;}
+    100% {top:210%;left:110%;transform:rotate(5050deg)}
+}
+@keyframes light3 {
+    0% {top:-20%;left:50%;transform:rotate(0deg)}
+    50% {top:100%;left:40%;}
+    100% {top:210%;left:30%;transform:rotate(3050deg)}
+}
+
+#st1 {
+    top:-20%;
+    width:70px;
+    opacity:0.5;
+}
+#st2 {
+    top:-20%;
+    width:20px;
+    opacity:0.7;
+}
+#st3 {
+    top:-20%;
+    width:120px;
+    opacity:0.4;
+}
+.open #st1 {
+    animation:str1 10s linear infinite 20s;
+}
+.open #st2 {
+    animation:str2 12s linear infinite 12s;
+}
+.open #st3 {
+    animation:str3 27s linear infinite 2s;
+}
+@keyframes str1 {
+    0% {top:-20%;left:-10%;transform:rotate(0deg)}
+    50% {top:100%;left:20%;}
+    100% {top:210%;left:30%;transform:rotate(550deg)}
+}
+@keyframes str2 {
+    0% {top:-20%;left:110%;transform:rotate(0deg)}
+    50% {top:90%;left:70%;}
+    100% {top:190%;left:30%;transform:rotate(450deg)}
+}
+@keyframes str3 {
+    0% {top:-20%;left:60%;transform:rotate(0deg)}
+    50% {top:70%;left:50%;}
+    100% {top:170%;left:40%;transform:rotate(850deg)}
+}
+/*----- stars background -----*/
+
+
+
+/*----- left & right sides -----*/
+#left-side {
+    width:40px;
+    height:100%;
+    position:fixed;
+    left:0%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+#left-side div {
+    width:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    animation:left 10s linear infinite;
+}
+#left-side div img {
+    width:20px;
+    margin:5px 0;
+}
+@keyframes left {
+    0% {top:-100%;}
+    100% {top:100%}
+}
+
+
+#right-side {
+    width:40px;
+    height:100%;
+    position:fixed;
+    right:0%;
+    background-color:rgba(0, 0, 0, 0.5);
+    z-index:10;
+}
+#right-side div {
+    width:40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    position:absolute;
+    animation:right 10s linear infinite;
+}
+#right-side div img {
+    width:20px;
+    margin:5px 0;
+}
+@keyframes right {
+    0% {bottom:-100%}
+    100% {bottom:100%}
+}
+
+/*----- left & right sides -----*/
+
+
+
+/*----- ballons 2022 -----*/
+#ballon {
+    position:fixed;
+    height:100%;
+    width:100%;
+    z-index: 50;
+    pointer-events:none;
+
+}
+#ballon img {
+    width:100px;
+    position:absolute;
+}
+#ba1 {
+    bottom:-50%;
+    left:0%;
+    visibility: hidden;
+}
+#ba2 {
+    bottom:-50%;
+    left:10%;
+    visibility: hidden;
+}
+#ba3 {
+    bottom:-50%;
+    left:20%;
+    visibility: hidden;
+    border-radius: 100px;
+}
+#ba4 {
+    bottom:-50%;
+    left:30%;
+    visibility: hidden;
+}
+#ba5 {
+    bottom:-50%;
+    left:40%;
+    visibility: hidden;
+}
+#ba6 {
+    bottom:-50%;
+    left:50%;
+    visibility: hidden;
+}
+#ba7 {
+    bottom:-50%;
+    left:60%;
+    visibility: hidden;
+    border-radius:100px;
+}
+#ba8 {
+    bottom:-50%;
+    left:70%;
+    visibility: hidden;
+}
+#ba9 {
+    bottom:-50%;
+    left:80%;
+    visibility: hidden;
+}
+#ba10 {
+    bottom:-50%;
+    left:90%;
+    visibility: hidden;
+}
+.open #ba1 {
+    animation:ba1 8s linear  10s forwards;
+}
+.open #ba2 {
+    animation:ba2 8s linear  5s forwards;
+}
+.open #ba3 {
+    animation:ba3 8s linear forwards;
+}
+.open #ba4 {
+    animation:ba4 8s linear  3s forwards;
+}
+.open #ba5 {
+    animation:ba5 8s linear  7s forwards;
+}
+.open #ba6 {
+    animation:ba6 8s linear  3s forwards;
+}
+.open #ba7 {
+    animation:ba7 8s linear  5s forwards;
+}
+.open #ba8 {
+    animation:ba8 8s linear  2s forwards;
+}
+.open #ba9 {
+    animation:ba9 8s linear  1s forwards;
+}
+.open #ba10 {
+    animation:ba10 8s linear 7s forwards;
+}
+@keyframes ba1 {
+    0% {bottom:-20% ; left:0% ;visibility: visible;}
+    25% {bottom:20% ; left:5% ;}
+    50% {bottom:45% ; left:10% ;}
+    75% {bottom:71% ; left:11% ;}
+    100% {bottom:100% ; left:12% ;display: none;}
+}
+@keyframes ba2 {
+    0% {bottom:-20% ; left:10% ;visibility: visible;}
+    25% {bottom:20% ; left:12% ;}
+    50% {bottom:45% ; left:15% ;}
+    75% {bottom:71% ; left:10% ;}
+    100% {bottom:100% ; left:5% ;display: none;}
+}
+@keyframes ba3 {
+    0% {bottom:-20% ; left:20% ;visibility: visible;}
+    25% {bottom:20% ; left:15% ;}
+    50% {bottom:45% ; left:10% ;}
+    75% {bottom:71% ; left:7% ;}
+    100% {bottom:100% ; left:5% ;display: none;}
+}
+@keyframes ba4 {
+    0% {bottom:-20% ; left:30% ;visibility: visible;}
+    25% {bottom:20% ; left:32% ;}
+    50% {bottom:45% ; left:35% ;}
+    75% {bottom:71% ; left:32% ;}
+    100% {bottom:100% ; left:30% ;display: none;}
+}
+@keyframes ba5 {
+    0% {bottom:-20% ; left:40% ;visibility: visible;}
+    25% {bottom:20% ; left:37% ;}
+    50% {bottom:45% ; left:35% ;}
+    75% {bottom:71% ; left:30% ;}
+    100% {bottom:100% ; left:27% ;display: none;}
+}
+@keyframes ba6 {
+    0% {bottom:-20% ; left:50% ;visibility: visible;}
+    25% {bottom:20% ; left:55% ;}
+    50% {bottom:45% ; left:57% ;}
+    75% {bottom:71% ; left:58% ;}
+    100% {bottom:100% ; left:55% ;display: none;}
+}
+@keyframes ba7 {
+    0% {bottom:-20% ; left:60% ;visibility: visible;}
+    25% {bottom:20% ; left:58% ;}
+    50% {bottom:45% ; left:55% ;}
+    75% {bottom:71% ; left:53% ;}
+    100% {bottom:100% ; left:54% ;display: none;}
+}
+@keyframes ba8 {
+    0% {bottom:-20% ; left:70% ;visibility: visible;}
+    25% {bottom:20% ; left:73% ;}
+    50% {bottom:45% ; left:75% ;}
+    75% {bottom:71% ; left:75% ;}
+    100% {bottom:100% ; left:74% ;display: none;}
+}
+@keyframes ba9 {
+    0% {bottom:-20% ; left:80% ;visibility: visible;}
+    25% {bottom:20% ; left:79% ;}
+    50% {bottom:45% ; left:78% ;}
+    75% {bottom:71% ; left:77% ;}
+    100% {bottom:100% ; left:78% ;display: none;}
+}
+@keyframes ba10 {
+    0% {bottom:-20% ; left:90% ;visibility: visible;}
+    25% {bottom:20% ; left:87% ;}
+    50% {bottom:45% ; left:86% ;}
+    75% {bottom:71% ; left:85% ;}
+    100% {bottom:100% ; left:89% ;display: none;}
+}
+/*----- ballons 2022 -----*/
+
+
+
+/*----- content -----*/
+
+.container {
+    background:rgba(12, 12, 12, 0.74) url(images/background.gif) center fixed;
+    max-width:500px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    position:relative;
+    border-radius:5px;
+    padding-bottom:12rem;
+    margin:-2rem 0 0 0 ;
+    overflow:hidden;
+}
+
+
+/*----- name -----*/
+#name-img {
+    max-width:100%;
+}
+#header {
+    animation:wobble 5s ease-in-out infinite;
+    transform-origin:center center;
+    transform-style:preserve-3d;
+    font-size: 4px;
+    margin: -4em 0;
+    margin-bottom: 40px;
+}
+@keyframes wobble {
+    0%,100%{ transform:rotate3d(1,1,0,20deg); }
+    25%{ transform:rotate3d(-1,1,0,20deg); }
+    50%{ transform:rotate3d(-1,-1,0,20deg); }
+    75%{ transform:rotate3d(1,-1,0,20deg); }
+}
+#header-name {
+    font-size:3.5rem;
+    margin:1rem 1rem 0rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background:linear-gradient(to right, rgb(255, 100, 100) 20%,rgb(255, 211, 66) 40%,rgb(241, 255, 45) 60%, #fc38a4 80%) ;
+    background-size:200% auto;
+    background-clip: text;
+    text-emphasis-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: shine 1s linear infinite;
+    transition: all linear 0.2s;
+    transform-style: preserve-3d;
+    animation: shine 2s infinite alternate ease-in-out -7.5s;
+    transform: rotateY(10deg) rotateX(23deg) translateZ(0);
+    text-shadow: 1px 3px 2px rgba(255, 222, 36, 0.397);
+    text-transform:uppercase;
+}
+@-webkit-keyframes shine {
+    to {
+    transform: translateY(0);
+    background-position: 200% center;
+    }
+}
+@keyframes shine {
+    to {
+    transform: translateY(0.2em);
+    background-position: 200% center;
+    }
+}
+@-webkit-keyframes nam {
+    to {
+    transform: translateY(0.3em);
+    background-position: 200% center;
+    }
+}
+@keyframes nam {
+    to {
+    transform: translateY(0.3em);
+    background-position: 200% center;
+    }
+}
+
+#lang {
+    height:30px;
+    padding:4px 7px;
+    width:70px;
+    background: rgba(255, 255, 0, 0.671);
+    border:1px solid rgba(255, 0, 0, 0.753);
+    border-radius:5px;
+    cursor:pointer;
+    color:rgba(255, 0, 0, 0.726);
+    font-family:cursive;
+    font-weight:700;
+    margin:0 auto;
+    outline:red;
+}
+
+
+#french {
+    max-width:75%;
+    margin-top:1rem;
+}
+
+/*----- top images -----*//*----- animation of top images -----*/
+#anim-img1 {
+    width:100%;
+    height:200px;
+    position:relative;
+    margin:1rem;
+}
+#image1 {
+    position:absolute;
+    animation: img1 4s linear infinite ;
+    width:200px;
+    height: 200px;
+}
+#image2 {
+    animation:img2 5s linear infinite;
+    margin-bottom:1.5rem;
+    max-width:70%;
+    border-radius:20px;
+    padding:0.2rem;
+}
+
+
+@keyframes img1 {
+    0% {transform:translate(-50%) rotate(0deg); left:50%;}
+    12.5% {transform:translate(-50%) rotate(12deg); left:46%;}
+    25% {transform:translate(-50%) rotate(24deg); left:43%;}
+    37.5% {transform:translate(-50%) rotate(12deg); left:46%;}
+    50% {transform:translate(-50%) rotate(0deg); left:50%;}
+    62.5% {transform:translate(-50%) rotate(-12deg); left:54%;}
+    75% {transform:translate(-50%) rotate(-24deg); left:57%;}
+    87.5% {transform:translate(-50%) rotate(-12deg); left:54%;}
+    100% {transform:translate(-50%) rotate(0deg); left:50%;}
+}
+@keyframes img2 {
+    0% {transform:scale(0);}
+    12.5% {transform:scale(0.7);}
+    25% {transform:scale(1);}
+    37.5% {transform:scale(0.75);}
+    50% {transform:scale(1);}
+    62.5% {transform:scale(0.75);}
+    75% {transform:scale(1);}
+    87.5% {transform:scale(0.7);}
+    100% {transform:scale(0);}
+}
+
+/*----- bottom images -----*/
+
+#happy2022 {
+    width:70%;
+    margin:3rem 0;
+}
+
+.circle-item>li>img {
+    transition:transform 4s linear;
+}
+
+/*----- paragraphs -----*/
+#souhaite1 {
+    font-size:1.5rem;
+    color:yellow;
+    max-width:70%;
+    margin:1rem auto;
+    font-family: 'Pacifico', cursive;
+}
+#souhaite2 {
+    font-size:1.5rem;
+    color:rgb(0, 255, 170);
+    margin:1rem auto;
+    max-width:70%;
+    font-family: 'Pacifico', cursive;
+}
+#souhaite3 {
+    font-size:1.5rem;
+    color:rgb(255, 0, 221);
+    margin:1rem auto;
+    max-width:70%;
+    font-family: 'Pacifico', cursive;
+}
+
+/*----- animating the bottom paragraphs -----*/
+#anim-pa {
+    height:40px;
+    position:relative;
+    overflow:hidden;
+    margin-bottom:1rem;
+}
+
+#anim-pa p {
+    font-size:1.5rem;
+    font-family: 'Comfortaa', cursive;
+    animation:anim-pa 15s linear infinite;
+    position:absolute;
+    top:15%;
+    min-width:200%;
+    color:yellow;
+}
+#anim-pa p span {
+    font-weight:700;
+    font-size:1.6rem;
+}
+
+@keyframes anim-pa {
+    0% {left:100%}
+    100% {left:-180%}
+}
+
+#anim-pa #te {
+    text-shadow: 1px 2px 1px #8edbff;
+    color: rgb(4, 162, 202);
+    font-size:1.2rem;
+    font-weight:500;
+
+}
+
+/*----- last paragraph -----*/
+
+#con {
+    margin-bottom:rem;
+    height:150px;
+    width: 100%;
+    position:relative;
+}
+#part {
+    width:90%;
+    position:absolute;
+    font-size:1.55rem;
+    font-weight:700;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    z-index:2;
+    color:rgb(230, 60, 18);
+    text-shadow: 1px 2px 3px #ffe923, 1px 2px 3px #ffe923, -1px -1px 3px #ffe923, -1px -1px 3px #ffe923;
+    padding-bottom:1.5rem;
+    animation:part 3s linear infinite;
+}
+
+@keyframes part {
+    0% {top:40%;}
+    20% {top:45.5%;}
+    30% {top:39%;}
+    40% {top:35.5%;}
+    50% {top:51%;}
+    60% {top:36.5%;}
+    70% {top:51%;}
+    80% {top:40%;}
+    90% {top:51%;}
+    100% {top:40%;}
+}
+
+
+
+#last-img {
+    width:92%;
+    position:absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    z-index:1;    
+    animation:part 3s linear infinite;
+}
+/*----- content -----*/
+
+
+
+/*----- ad -----*/
+
+/*----- ad -----*/
+
+
+
+
+/*----- input form -----*/
+/* in othere CSS file */
+
+
+
+/*----- footer Dl -----*/
+footer {
+    display: flex;
+    width:100%;
+    position:absolute;
+    bottom:2%;
+    z-index:10;
+    justify-content: center;
+    color:white;
+}
+footer p span {
+    font-family:Caveat;
+    font-size:1.5rem;
+}
+/*----- footer Dl -----*/
+
+/*------------------------------------- Media quearys ---------------------------------*/
+
+@media (max-width:760px) {
+    #star1 {
+        width:100px;
+    }
+    #snow2 {
+        width:50px;
+    }
+    #snow4 {
+        width:90px;
+    }
+    #st3 {
+        width:94px;
+    }
+
+    #left-door,#right-door {
+        height:100%;
+    }
+
+    #click .matki img {
+        width:50%;
+    }
+
+    #clown {
+        width:150px;
+    }
+
+    #ballon img {
+        width:80px;
+        position:absolute;
+    }
+
+    #header-name {
+        font-size:3rem;
+    }
+
+    #lang {
+        font-size:0.8rem;
+    }
+    
+    #french {
+        max-width:75%;
+    }
+    
+    #souhaite1,#souhaite2,#souhaite3 {
+        font-size:1.3rem;
+    }
+
+
+    #anim-pa p {
+        font-size:1.2rem;
+        width:140%;
+        color:yellow;
+    }
+    #anim-pa p span {
+        font-weight:700;
+        font-size:1.4rem;
+    }
+
+
+
+    footer p {
+        font-size:1.2rem;
+    }
+}
+
+@media (max-width:500px) {
+
+
+    #click .matki img {
+        width:40%;
+    }
+
+    #clown {
+        width:150px;
+    }
+
+    #header-name {
+        font-size:2.7rem;
+    }
+
+    .name input[type=name] {
+        left: 3px;
+        width: 60%;
+    }
+    .go, .name input[type=name] {
+        font-size: 1.1rem;
+    }
+
+    .go {
+        right: 2px;
+        width: 35%;
+    }
+
+    #souhaite1,#souhaite2,#souhaite3 {
+        font-size:1.1rem;
+    }
+
+    #anim-pa p {
+        font-size:1.2rem;
+        width:150%;
+        color:yellow;
+    }
+    #anim-pa p span {
+        font-weight:700;
+        font-size:1.4rem;
+    }
+
+    #part {
+        font-size:1.25rem;
+    }
+
+    footer {
+        bottom:2.5%;
+    }
+    footer p {
+        font-size:1rem;
+    }
+
+}
+@media (max-width:350px) {
+    #click .matki img {
+        width:30%;
+    }
+
+    #header-name {
+        font-size:2.4rem;
+    }
+    .name input[type=name] {
+        left: 3px;
+        width: 61%;
+    }
+    .go, .name input[type=name] {
+        font-size: 1rem;
+    }
+
+    .go {
+        right: 2px;
+        width: 30%;
+    }
+
+    #anim-pa p {
+        font-size:1.1rem;
+        width:150%;
+        color:yellow;
+        margin:0;
+    }
+    #anim-pa p span {
+        font-weight:700;
+        font-size:1.3rem;
+    }
+
+    .circle-item>li:last-child>img {
+        width:8rem !important;
+        height:8rem !important;
+    }
+    .circle-item>li>img {
+        width:4.5rem !important;
+        height:4.6rem !important;
+        left:2.5em !important;
+    }
+    .circle-container{
+        width:9.7em !important;
+        height:5em !important;
+        margin:5em auto 8em !important;
+    }
+
+
+    footer p {
+        font-size:1rem;
+    }
+}

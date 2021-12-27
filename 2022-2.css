@@ -1,0 +1,132 @@
+.hidden{
+	display: none !important;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+
+.btn,.btn-flat,.btn-large{
+    border:none;
+    border-radius:2px;
+    display:inline-block;
+    height:36px;
+    line-height:36px;
+    outline:0;
+    padding:0 2rem;
+    text-transform:uppercase;vertical-align:middle;
+}
+.btn,.btn-large{
+    color:#fff;
+    background-color:#c71515;
+    letter-spacing:.5px;
+    transition:.2s ease-out;
+    cursor:pointer
+}
+::-ms-input-placeholder {
+    color:white;    
+}
+::-webkit-input-placeholder {
+    color:white;
+}
+
+
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+
+.timer-text{
+    color: #fff;
+    font-size: 18px;
+}
+.day, .hr, .min{
+    color: yellow;
+}
+.sec{
+    color: brown;
+}
+/*timer animation end*/
+
+
+/*Float share*/
+.float-share a {
+    width: 49.84%;
+}
+
+.float-share {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    z-index: 50;
+}
+
+/*Sticky input start*/
+
+.name input[type=name] {
+    left: 3px;
+    width: 65%;
+}
+.go, .name input[type=name] {
+    outline:none;
+    color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 1px solid #e60e40;
+    display: inline-block;
+    font-size: 1.3rem;
+    height: 45px;
+    text-transform: none;
+    z-index:100;
+}
+.go, .name input[type=name], .sticky {
+    padding: 8px;
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+}
+.go {
+    right: 2px;
+    width: 30%;
+}
+a {
+    color: #fff;
+}
+
+.float-share {
+    width: 100%;
+    position: fixed;
+    left: 0;
+}
+
+
+a.whatsapp-btn{
+    height: 43px; 
+    border-radius: 7px; 
+    width: 100% !important;
+}
+
+
+.whatsapp-icon{
+    float: left;
+    margin-top: -29px;
+    margin-left: 56px;
+    width: 20px;
+}
+
+.kakao-icon{
+    float: left;
+    margin-top: -38px;
+    margin-left: 56px;
+    width: 40px;
+}
+
+
+.whatsapp-share-text{
+    font-size: 17px;
+    margin-top: 4px !important;
+    margin-left: 13px;
+}
+
+/*Sticky input end*/
+
+
+
